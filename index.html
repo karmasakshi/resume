@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="karmasakshi-goyal">KARMASAKSHI GOYAL</h1>
+<blockquote>
+<p>+91 97399 31869<br>
+<a href="mailto:karmasakshi121@gmail.com">karmasakshi121@gmail.com</a><br>
+<a href="https://karmasakshi.com">karmasakshi.com</a><br>
+Mumbai</p>
+</blockquote>
+<h2 id="profile">PROFILE</h2>
+<blockquote>
+<p>Full-stack web developer with over 6 years of professional experience in architecting, designing and building web applications.<br>
+Technical leader with over 5 years of professional experience in piloting, steering and expanding development teams.<br>
+Developability and usability enthusiast.</p>
+</blockquote>
+<h2 id="skills">SKILLS</h2>
+<blockquote>
+<p>CSS Frameworks: <code>Bootstrap</code>, <code>Foundation</code>, <code>Spectre</code><br>
+Databases: <code>MongoDB</code>, <code>MySQL</code>, <code>Redis</code><br>
+JavaScript Back-End Frameworks (<code>Node.js</code>): <code>Apollo Server</code>, <code>Express</code>, <code>Sails</code><br>
+JavaScript Front-End Frameworks: <code>Angular</code>, <code>Angular Material</code>, <code>AngularJS</code>, <code>Apollo Client</code>, <code>Clarity Design System</code>, <code>jQuery</code>, <code>React</code><br>
+PHP Frameworks: <code>CodeIgniter</code>, <code>Laravel</code><br>
+Other Libraries: <code>amCharts</code>, <code>amMaps</code>, <code>Bootstrap</code>, <code>Foundation</code>, <code>RxJS</code>, <code>SocketIO</code><br>
+PaaS: <code>Amazon Web Services</code>, <code>Firebase</code><br>
+Preprocessors: <code>LESS</code>, <code>SASS</code>, <code>TypeScript</code><br>
+Software and SaaS: <code>BitBucket</code>, <code>Git</code>, <code>GitHub</code>, <code>Google Analytics</code>, <code>Google Maps</code>, <code>JIRA</code>, <code>Mixpanel</code></p>
+</blockquote>
+<h2 id="projects">PROJECTS</h2>
+<h3 id="employment">EMPLOYMENT</h3>
+<ol>
+<li>
+<p>INTELLECT DESIGN ARENA LTD., Mumbai, August 2016 - January 2019 (2 years 6 months)</p>
+<p>a. <strong>Contextual Banking Experience (CBX)</strong>: A corporate banking platform for banks around the world.</p>
+<ul>
+<li>
+<p>Front-End Module Lead, Cash-Flow Forecasting<br>
+September 2018 - January 2019 (5 months)</p>
+</li>
+<li>
+<p>Front-End Module Lead, Balance and Transaction Reporting<br>
+March 2018 - August 2018 (6 months)</p>
+</li>
+<li>
+<p>Front-End Team Lead<br>
+August 2016 - February 2018 (1 year 7 months)</p>
+<p><code>amCharts</code>, <code>amMaps</code>, <code>Angular</code>, <code>Apollo Client</code>, <code>Clarity Design System</code>, <code>SASS</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>FIRST NOTIFY SERVICES PVT. LTD., Mumbai, September 2015 - April 2016 (8 months)</p>
+<p>a. <strong>Grabslot</strong>: A marketplace of guaranteed online ad inventories.</p>
+<ul>
+<li>Senior Full-Stack Developer<br>
+November 2015 - April 2016 (6 months)
+<code>Angular</code>, <code>Angular Material</code>, <code>MongoDB</code>, <code>Redis</code>, <code>Sails</code></li>
+</ul>
+<p>b. <strong>WarCircle</strong>: A debating platform, now with over 5000 visits every week.</p>
+<ul>
+<li>Senior Full-Stack Developer<br>
+September 2015 - October 2015 (2 months)
+<code>Laravel</code>, <code>React</code></li>
+</ul>
+</li>
+<li>
+<p>SPORTKIX PTY. LTD., Mumbai, October 2014 - September 2015 (11 months)</p>
+<p>a. <strong>Sportkix</strong>: A worldwide sports news portal covering over 20 sports.</p>
+<ul>
+<li>JavaScript Developer<br>
+October 2014 - September 2015 (11 months)
+<code>AngularJS</code>, <code>Foundation</code>, <code>SocketIO</code></li>
+</ul>
+</li>
+<li>
+<p>DONE SOLUTIONS PVT. LTD. &amp; VIVACONNECT PVT. LTD., Mumbai, September 2013 - October 2014 (1 year 1 month)</p>
+<p>a. <strong>Done</strong>: An online ordering platform for over 15 restaurants, some serving over 5 cities.</p>
+<ul>
+<li>Software Developer<br>
+December 2013 - October 2014 (10 months)
+<code>AngularJS</code>, <code>Express</code>, <code>LESS</code>, <code>MongoDB</code></li>
+</ul>
+<p>b. <strong>MDConnect</strong>: A platform for doctors to interact with their patients.</p>
+<ul>
+<li>Software Developer<br>
+September 2013 - November 2013 (3 months)
+<code>MySQL</code>, <code>PHP</code></li>
+</ul>
+</li>
+<li>
+<p>MN&amp;C SUPPLY LINKS RETAIL INDIA PVT. LTD., Mumbai, December 2012 - May 2013 (6 months)</p>
+<p>a. <strong>LocalBanya</strong>: A grocery delivery service serving Mumbai and Pune, with over 150 orders every day.</p>
+<ul>
+<li>Intern<br>
+December 2012 - May 2013 (6 months)
+<code>CodeIgniter</code>, <code>jQuery</code>, <code>MySQL</code></li>
+</ul>
+</li>
+</ol>
+<h4 id="freelance">FREELANCE</h4>
+<ol>
+<li>
+<p><strong>Transportex</strong>: A portal simplifying employee travel.<br>
+November 2016 - December 2016 (2 months)<br>
+<code>Google Maps</code>, <code>MongoDB</code>, <code>Redis</code>, <code>Sails</code></p>
+</li>
+<li>
+<p><strong>Ediffy Attendance</strong>: A portal for managing attendance in classrooms.<br>
+June 2016 - October 2016 (5 months)<br>
+<code>AngularJS</code>, <code>MySQL</code>, <code>Sails</code></p>
+</li>
+<li>
+<p><strong>Crumbroll</strong>: A list discovery platform.<br>
+November 2015 - August 2016 (10 months)<br>
+<code>AngularJS</code>, <code>Bootstrap</code>, <code>jQuery</code></p>
+</li>
+<li>
+<p><strong>Frapp</strong>: A student-only platform for discounts, internships and more.<br>
+February 2015 - July 2015 (6 months)<br>
+<code>AngularJS</code>, <code>MongoDB</code>, <code>Sails</code></p>
+</li>
+</ol>
+<p><em>Other projects of shorter durations have been excluded.</em></p>
+<h4 id="self">SELF</h4>
+<ol>
+<li>
+<p><strong><a href="https://cinepotato.com">Cinepotato</a></strong>: A serverless movie discovery website.<br>
+August 2018 - Present (4 months)<br>
+<code>Angular</code>, <code>Firebase</code></p>
+</li>
+<li>
+<p><strong>200mins</strong>: A movie discovery website.<br>
+April 2016 - July 2016 (4 months)<br>
+<code>AngularJS</code>, <code>MongoDB</code>, <code>Sails</code></p>
+</li>
+<li>
+<p><strong>Bevereq</strong>: A socket-based beverage request management website.<br>
+December 2014 - January 2015 (2 months)<br>
+<code>AngularJS</code>, <code>Sails</code>, <code>SocketIO</code></p>
+</li>
+</ol>
+<p><em>Other projects of shorter durations have been excluded.</em></p>
+<h3 id="awards">AWARDS</h3>
+<ol>
+<li><strong>Special Recognition Award, Hackadrone 2018</strong>, Hyderabad<br>
+February 2018</li>
+</ol>
+<h3 id="certifications">CERTIFICATIONS</h3>
+<ol>
+<li><strong>MongoDB Certified Developer, Associate Level</strong><br>
+April 2015<br>
+Certificate no.: <code>776-411-905</code></li>
+</ol>
+<h3 id="education">EDUCATION</h3>
+<ol>
+<li>
+<p><strong>Master of Computer Application (M.C.A.)</strong>, Manipal University, Manipal<br>
+2010 - 2013 (3 years)<br>
+<code>7.23/10</code></p>
+</li>
+<li>
+<p><strong>Bachelor of Commerce (B·Com.)</strong>, Mumbai University, Mumbai<br>
+2007 - 2010 (3 years)<br>
+<code>62.29%</code></p>
+</li>
+<li>
+<p><strong>XIIth</strong>, Smt. Lilavatibai Podar Senior Secondary School, I.S.C., Mumbai<br>
+2007<br>
+<code>67.67%</code></p>
+</li>
+<li>
+<p><strong>Xth</strong>, Smt. Lilavatibai Podar High School, I.C.S.E., Mumbai<br>
+2005<br>
+<code>86.17%</code></p>
+</li>
+</ol>
+
+</body>
+</html>
